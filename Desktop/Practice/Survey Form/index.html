@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time and help us improve the platform</p>
+  <form id="survey-form">
+<fieldset>
+<label id="name-label">First name<input id="name" type="text" placeholder="Your First Name" required></label>
+    <label id="email-label">Email address<input id="email" type="email" placeholder="Email address" required></label>
+<label id="number-label">Your age<input id="number" type="number" min="12" max="99" placeholder="Age"></label>
+</fieldset>
+<fieldset>
+  <p>How did you know about us?
+<select id="dropdown">
+  <option>News</option>
+  <option>Social media</option>
+  <option>Friend</option>
+</select>
+</p>
+  <p>Do you spent at least 2 hours for coding?
+  </p>
+    <labelfor="yes"><input 
+    class="inline" name="ans" type="radio" value="yes">Yes
+  </label>
+<label for="no">
+<input class="inline" name="ans" type="radio" value="No">No
+</label>
+<p>
+  What is your favorite programming language?
+</p>
+<label for="CSS">
+<input type="checkbox" 
+class="inline"
+name="" value="female">CSS
+</label>
+<label for="HTML5">
+<input type="checkbox" 
+class="inline" name="prog-lang" value="HTML5">HTML5
+</label>
+<label for="javascript">
+  <input type="checkbox" 
+class="inline" name="prog-lang" value="javascript">Javascript
+  </label>
+  <label for="python">
+  <input type="checkbox" 
+class="inline" name="prog-lang" value="python">Phyton
+  </label>
+</fieldset><br>
+
+<textarea rows="4" cols="40" placeholder="Briefly about you..."></textarea><br>
+
+<input id="submit" type="submit">
+
+  </form>
+
+</body>  
+</html>
